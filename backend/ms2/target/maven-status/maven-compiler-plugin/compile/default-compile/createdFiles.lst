@@ -1,0 +1,7 @@
+com\example\ms2\Ms2Application.class
+com\example\ms2\model\Patient.class
+com\example\ms2\repository\PatientRepository.class
+com\example\ms2\service\PatientService.class
+com\example\ms2\service\PatientServiceImpl.class
+com\example\ms2\controller\PatientController.class
+com\example\ms2\dto\PatientRequest.class
