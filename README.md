@@ -43,3 +43,25 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## Run With Docker
+
+From project root:
+
+```powershell
+cd fms-project
+docker compose up --build
+```
+
+Services:
+
+- Frontend: `http://localhost:5173`
+- Eureka dashboard: `http://localhost:8761`
+- Appointment service: `http://localhost:8081`
+- Patient service: `http://localhost:8082`
+- Medical record service: `http://localhost:8083`
+
+Notes:
+
+- Backend services use `EUREKA_DEFAULT_ZONE` in containers and default to localhost outside Docker.
+- You can override each service MongoDB URI with `MONGODB_URI` environment variable.
